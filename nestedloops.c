@@ -70,5 +70,6 @@ printf("\n");
 makeRevstairs();
 printf("\n");
 makePyramid();
+
 return 0;
 }
