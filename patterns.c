@@ -48,6 +48,7 @@ void ramaNigga(int lines)
         printf("\n");
     }
 } 
+
 int main(){
 int lines;
 scanf("%d", &lines);
