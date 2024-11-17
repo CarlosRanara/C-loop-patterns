@@ -90,7 +90,17 @@ void revNigga(int lines)
             printf(" ");
         }
         for(j = 0; j < 2*(lines-i)-1 ; j++)
-        {
+        {#include <stdio.h>
+/* sum of all integers 1 to 1000*/ 
+int main ()
+{
+  int i=0;
+ 
+  for ( i = 1; i != 0; i++) 
+     printf("%d ", i);
+  
+  return 0;
+}
            printf("*");
         }
         printf("\n");
