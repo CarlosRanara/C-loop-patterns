@@ -15,7 +15,7 @@ void rightTriangle(int lines)
 
 void leftTriangle(int lines)
 {
-    int i = 0, lines = 5, j = 0, a = 0;
+    int i = 0, j = 0, a = 0;
     for(i = 0; i < lines; i++)
     {   
     
@@ -33,7 +33,7 @@ void leftTriangle(int lines)
 
 void ramaNigga(int lines)
 {
-    int i = 0, lines = 5, j = 0, a = 0;
+    int i = 0, j = 0, a = 0;
     for(i = 0; i < lines; i++)
     {   
     
@@ -49,6 +49,71 @@ void ramaNigga(int lines)
     }
 } 
 
+void invRight(int lines)
+{
+    int i = 0, j = 0;
+    for(i = 0; i < lines; i++)
+    {   
+        for(j = 0; j < lines - i; j++)
+        {
+           printf("*");
+        }
+        printf("\n");
+    }
+}
+
+void invLeft(int lines)
+{
+    int i = 0, j = 0, a = 0;
+    for(i = 0; i < lines; i++)
+    {   
+        for(a = 0; a < i; a++)
+        {
+            printf(" ");
+        }        
+        for(j = 0; j < lines - i; j++)       
+        {
+            printf("*");        
+        }
+        printf("\n");
+    }
+}
+
+void revNigga(int lines)
+{
+    int i = 0, j = 0, a = 0;
+    for(i = 0; i < lines; i++)
+    {   
+    
+        for(a = 0; a <= i; a++)
+        {
+            printf(" ");
+        }
+        for(j = 0; j < 2*(lines-i)-1 ; j++)
+        {
+           printf("*");
+        }
+        printf("\n");
+    }
+} 
+
+void makeRhombus(int lines)
+{
+    int i = 0, j = 0, k = 0;
+    for(i = 0; i < lines; i++)
+    {   
+       for(k = 0; k < lines - i - 1; k++)
+        {
+            printf(" ");
+        }
+       for(j = 0; j < lines; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
 int main(){
 int lines;
 scanf("%d", &lines);
@@ -58,6 +123,14 @@ printf("\n");
 leftTriangle(lines);
 printf("\n");
 ramaNigga(lines);
-
+printf("\n");
+invRight(lines);
+printf("\n");
+invLeft(lines);
+printf("\n");   
+revNigga(lines);
+printf("\n");
+makeRhombus(lines);
+printf("\n");
 return 0;
 }
